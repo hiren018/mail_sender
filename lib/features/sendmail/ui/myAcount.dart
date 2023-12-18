@@ -21,7 +21,7 @@ class MyAccountPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Logged in as:',
+              'Logged in as: ',
               style: TextStyle(
                 fontSize: 16,
                 color: kPrimaryLightColor,
