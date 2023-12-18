@@ -1,0 +1,73 @@
+{
+    "project_info": {
+        "project_number": "1018305402344",
+        "project_id": "mail-sender-c74da",
+        "storage_bucket": "mail-sender-c74da.appspot.com"
+    },
+    "client": [{
+            "client_info": {
+                "mobilesdk_app_id": "1:1018305402344:android:7b694faff74d46d34fc05d",
+                "android_client_info": {
+                    "package_name": "com.example.mail_sender"
+                }
+            },
+            "oauth_client": [{
+                    "client_id": "1018305402344-h1foofaulkae6bso6l61hssp21nld6aa.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.example.mail_sender",
+                        "certificate_hash": "0058e251a5d33067212f5a6d1085a56b4003746a"
+                    }
+                },
+                {
+                    "client_id": "1018305402344-9k0p3v5dfl6ue8rkt6ag83o5qf2av7f9.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [{
+                "current_key": "AIzaSyA4Z60NPrCcGXSF4x7IE9fjuFYQ61LUENw"
+            }],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [{
+                        "client_id": "1018305402344-9k0p3v5dfl6ue8rkt6ag83o5qf2av7f9.apps.googleusercontent.com",
+                        "client_type": 3
+                    }]
+                }
+            }
+        },
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:1018305402344:android:666f3153f2e007ef4fc05d",
+                "android_client_info": {
+                    "package_name": "com.example.mail_sender.dev"
+                }
+            },
+            "oauth_client": [{
+                    "client_id": "1018305402344-j1u0isbjgbvnu386e8e4ae4n7kgp0p7l.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.example.mail_sender.dev",
+                        "certificate_hash": "0058e251a5d33067212f5a6d1085a56b4003746a"
+                    }
+                },
+                {
+                    "client_id": "1018305402344-9k0p3v5dfl6ue8rkt6ag83o5qf2av7f9.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [{
+                "current_key": "AIzaSyA4Z60NPrCcGXSF4x7IE9fjuFYQ61LUENw"
+            }],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [{
+                        "client_id": "1018305402344-9k0p3v5dfl6ue8rkt6ag83o5qf2av7f9.apps.googleusercontent.com",
+                        "client_type": 3
+                    }]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}
