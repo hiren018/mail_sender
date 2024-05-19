@@ -20,7 +20,7 @@ jobs:
     - name: Set up Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.0.0' # specify the Flutter version you want to use
+        flutter-version: '3.3.0' # specify the Flutter version you want to use
 
     - name: Install dependencies
       run: flutter pub get
@@ -37,24 +37,24 @@ jobs:
     - name: Build APK
       run: flutter build apk --release
 
-    - name: Build iOS (if on macOS)
-      if: runner.os == 'macOS'
-      run: flutter build ios --release
+    # - name: Build iOS (if on macOS)
+    #   if: runner.os == 'macOS'
+    #   run: flutter build ios --release
 
     # Example of uploading the APK as an artifact
-    - name: Upload APK
-      if: success()
-      uses: actions/upload-artifact@v2
-      with:
-        name: apk
-        path: build/app/outputs/flutter-apk/app-release.apk
+    # - name: Upload APK
+    #   if: success()
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: apk
+    #     path: build/app/outputs/flutter-apk/app-release.apk
 
     # Example of deploying to Firebase App Distribution (optional)
-    - name: Deploy to Firebase App Distribution
-      if: success() && github.ref == 'refs/heads/main'
-      uses: wzieba/Firebase-Distribution-Github-Action@v1
-      with:
-        appId: ${{ secrets.FIREBASE_APP_ID }}
-        token: ${{ secrets.FIREBASE_TOKEN }}
-        groups: testers
-        file: build/app/outputs/flutter-apk/app-release.apk
+    # - name: Deploy to Firebase App Distribution
+    #   if: success() && github.ref == 'refs/heads/main'
+    #   uses: wzieba/Firebase-Distribution-Github-Action@v1
+    #   with:
+    #     appId: ${{ secrets.FIREBASE_APP_ID }}
+    #     token: ${{ secrets.FIREBASE_TOKEN }}
+    #     groups: testers
+    #     file: build/app/outputs/flutter-apk/app-release.apk
